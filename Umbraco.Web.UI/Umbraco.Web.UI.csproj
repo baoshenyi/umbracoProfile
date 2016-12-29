@@ -460,14 +460,12 @@
     </Compile>
     <Compile Include="Umbraco\Developer\Packages\DirectoryBrowser.aspx.cs">
       <DependentUpon>directoryBrowser.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Umbraco\Developer\Packages\DirectoryBrowser.aspx.designer.cs">
       <DependentUpon>directoryBrowser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Umbraco\Developer\Packages\StarterKits.aspx.cs">
       <DependentUpon>StarterKits.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Umbraco\Developer\Packages\StarterKits.aspx.designer.cs">
       <DependentUpon>StarterKits.aspx</DependentUpon>
