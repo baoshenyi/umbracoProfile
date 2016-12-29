@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <plugins>
   <baseType type="umbraco.interfaces.IApplicationStartupHandler" resolutionType="FindAllTypes">
-    <add type="umbraco.editorControls.PickerRelations.PickerRelationsEventHandler, umbraco.editorControls, Version=1.0.6206.29325, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.Strategies.RelateOnCopyHandler, Umbraco.Core, Version=1.0.6206.29316, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.Strategies.RelateOnTrashHandler, Umbraco.Core, Version=1.0.6206.29316, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.Models.Identity.IdentityModelMappings, Umbraco.Core, Version=1.0.6206.29316, Culture=neutral, PublicKeyToken=null" />
@@ -48,6 +47,7 @@
     <add type="Umbraco.Web.Models.Mapping.SectionModelMapper, umbraco, Version=1.0.6206.29321, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Models.Mapping.UserModelMapper, umbraco, Version=1.0.6206.29321, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Cache.CacheRefresherEventHandler, umbraco, Version=1.0.6206.29321, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.editorControls.PickerRelations.PickerRelationsEventHandler, umbraco.editorControls, Version=1.0.6206.29325, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter" resolutionType="FindAllTypes" />
   <baseType type="Umbraco.Core.PropertyEditors.IPropertyValueConverter" resolutionType="FindAllTypes">
@@ -166,6 +166,8 @@
     <add type="Umbraco.Core.Persistence.Mappers.UserTypeMapper, Umbraco.Core, Version=1.0.6206.29316, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Core.PropertyEditors.IParameterEditor" resolutionType="FindAllTypes">
+    <add type="Umbraco.Core.PropertyEditors.ParameterEditor, Umbraco.Core, Version=1.0.6206.29316, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.PropertyEditors.PropertyEditor, Umbraco.Core, Version=1.0.6206.29316, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PropertyEditors.DecimalPropertyEditor, umbraco, Version=1.0.6206.29321, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PropertyEditors.GridPropertyEditor, umbraco, Version=1.0.6206.29321, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PropertyEditors.EmailAddressPropertyEditor, umbraco, Version=1.0.6206.29321, Culture=neutral, PublicKeyToken=null" />
@@ -210,7 +212,5 @@
     <add type="Umbraco.Web.PropertyEditors.ParameterEditors.PropertyGroupParameterEditor, umbraco, Version=1.0.6206.29321, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PropertyEditors.ParameterEditors.PropertyTypeParameterEditor, umbraco, Version=1.0.6206.29321, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PropertyEditors.ParameterEditors.SingleMediaPickerParameterEditor, umbraco, Version=1.0.6206.29321, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.PropertyEditors.ParameterEditor, Umbraco.Core, Version=1.0.6206.29316, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.PropertyEditors.PropertyEditor, Umbraco.Core, Version=1.0.6206.29316, Culture=neutral, PublicKeyToken=null" />
   </baseType>
 </plugins>
